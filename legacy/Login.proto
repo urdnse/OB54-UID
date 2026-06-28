@@ -1,0 +1,68 @@
+  syntax = "proto3";
+
+  package login;
+
+  message LoginReq {
+    string event_time = 3;              
+    string game_id = 4;                    
+    uint32 platform_id = 5;                
+    string client_version = 7;             
+    string system_software = 8;            
+    string system_hardware = 9;            
+    string telecom_operator = 10;          
+    string network_type = 11;              
+    uint32 screen_width = 12;              
+    uint32 screen_height = 13;             
+    string screen_dpi = 14;                
+    string cpu_hardware = 15;              
+    uint32 memory_mb = 16;                 
+    string gl_renderer = 17;               
+    string gl_version = 18;                
+    string device_id = 19;                 
+    string client_ip = 20;                 
+    string language = 21;                  
+    string open_id = 22;                   
+    string open_id_type = 23;              
+    string device_type = 24;               
+    string device_model = 25;              
+    string login_token = 29;               
+    uint32 platform_sdk_id = 30;           
+    string network_operator_alt = 41;      
+    string network_type_alt = 42;          
+    string signature_md5 = 57;             
+    int32 reserved1 = 60;                  
+    int32 reserved2 = 61;                  
+    int32 reserved3 = 62;
+    int32 reserved4 = 63;
+    int32 reserved5 = 64;
+    int32 reserved6 = 65;
+    int32 reserved7 = 66;
+    int32 reserved8 = 67;
+    int32 reserved9 = 73;
+    string library_path = 74;              
+    int32 reserved10 = 76;
+    string library_token = 77;             
+    int32 reserved11 = 78;
+    int32 reserved12 = 79;
+    string cpu_architecture = 81;          
+    string client_version_code = 83;       
+    int32 reserved13 = 85;
+    string system_graphics_api = 86;       
+    int32 reserved14 = 87;
+    int32 reserved15 = 88;
+    string ip_city = 90;                   
+    string ip_subdivision = 91;            
+    uint32 loading_time_ms = 92;           
+    string release_channel = 93;           
+    string deviceData = 94;                 
+    int32 reserved16 = 95;
+    int32 reserved17 = 97;
+    string reserved18 = 99;
+    string reserved19 = 100;
+    bytes reserved20 = 102;
+  }
+
+
+  message getUID{
+    uint64 uid = 1;
+  }
