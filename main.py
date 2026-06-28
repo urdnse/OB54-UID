@@ -7,7 +7,7 @@
 
 Usage:
     python main.py
-    Starts mitmproxy on 0.0.0.0:8082.
+    Starts mitmproxy on 0.0.0.0:8080.
 """
 
 import sys
@@ -726,7 +726,7 @@ if __name__ == "__main__":
     proc = subprocess.Popen(
         [
             sys.executable, "-c",
-            f"import sys; from mitmproxy.tools.main import mitmdump; sys.argv = ['mitmdump', '-s', '{script_path}', '-p', '8082', '--listen-host', '0.0.0.0', '--set', 'block_global=false']; mitmdump()",
+            f"import sys; from mitmproxy.tools.main import mitmdump; sys.argv = ['mitmdump', '-s', '{script_path}', '-p', '8080', '--listen-host', '0.0.0.0', '--set', 'block_global=false']; mitmdump()",
         ],
         env=os.environ.copy()
     )
